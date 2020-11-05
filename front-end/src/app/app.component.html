@@ -1,0 +1,28 @@
+<table>
+  <thead>
+    <tr>
+      <td>userId</td>
+      <td>currencyFrom</td>
+      <td>currencyTo</td>
+      <td>amountSell</td>
+      <td>amountBuy</td>
+      <td>rate</td>
+      <td>timePlaced</td>
+      <td>originatingCountry</td>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let tradeMessage of tradeMessageList">
+      <td>{{tradeMessage.userId}}</td>
+      <td>{{tradeMessage.currencyFrom}}</td>
+      <td>{{tradeMessage.currencyTo}}</td>
+      <td>{{tradeMessage.amountSell}}</td>
+      <td>{{tradeMessage.amountBuy}}</td>
+      <td>{{tradeMessage.rate}}</td>
+      <td>{{tradeMessage.timePlaced}}</td>
+      <td>{{tradeMessage.originatingCountry}}</td>
+
+    </tr>
+  </tbody>
+</table>
